@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProductActivity"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/addProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Name"/>
+
+    <Spinner
+        android:id="@+id/addProductCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/addProductPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"/>
+
+    <EditText
+        android:id="@+id/addProductDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Product Details"/>
+
+    <Button
+        android:id="@+id/addProductBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addProduct"
+        android:text="Add"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
